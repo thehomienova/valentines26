@@ -27,6 +27,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: -1;
 }
 
 @keyframes heartbeat {
@@ -88,7 +89,7 @@ html, body {
     }
 }
 
-#itinerary, #home {
+#itinerary, #home, #gift {
     font-size: 2rem;
     font-family: 'Romantic', serif;
     color: rgb(241, 85, 85);
@@ -101,7 +102,16 @@ html, body {
 #itinerary.said-yes {
     display: block;
     position: relative;
-    top: 28vh;
+    top: -25vh;
+    left: -12vh;
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+#gift.said-yes {
+    display: block;
+    position: relative;
+    top: -25vh;
+    left: 12vh;
     animation: heartbeat 2s ease-in-out infinite;
 }
 
@@ -114,15 +124,4 @@ html, body {
         color: white;
         text-decoration: none;
     }
-}
-
-#textBubble {
-    display: none;
-}
-
-#textBubble.said-yes {
-    display: block;
-    position: relative;
-    size: 15%;
-    bottom: 5vh;
 }
