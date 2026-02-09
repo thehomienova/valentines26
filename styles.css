@@ -11,7 +11,7 @@
 }
 
 html, body {
-    height: 100%;
+    height: 107%;
     overflow: hidden;
     background-color: rgb(255, 214, 221);
 }
@@ -89,7 +89,7 @@ html, body {
     }
 }
 
-#itinerary, #home, #gift {
+#home {
     font-size: 2rem;
     font-family: 'Romantic', serif;
     color: rgb(241, 85, 85);
@@ -97,22 +97,6 @@ html, body {
     text-align: center;
     position: relative;
     display: none;
-}
-
-#itinerary.said-yes {
-    display: block;
-    position: relative;
-    top: -25vh;
-    left: -12vh;
-    animation: heartbeat 2s ease-in-out infinite;
-}
-
-#gift.said-yes {
-    display: block;
-    position: relative;
-    top: -25vh;
-    left: 12vh;
-    animation: heartbeat 2s ease-in-out infinite;
 }
 
 #home.said-no {
@@ -124,4 +108,48 @@ html, body {
         color: white;
         text-decoration: none;
     }
+}
+
+.said-yes-layout {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 84.7%;
+    height: 40%;
+    margin-bottom: 44.5vh;
+    background-color: white;
+    padding: 5px;
+}
+
+.couplepics {
+    height: 37%;
+    width: 32%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(211, 53, 138, 0.5);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+
+}
+
+.said-yes-layout h1 {
+    opacity: 0;
+    font-size: 1.3rem;
+    font-family: 'Romantic', serif;
+    color: rgb(241, 85, 85);
+    position: relative;
+    left: 6%;
+    transition: opacity 0.8s ease-out;
+}
+
+#itinerary {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 12vh;
+    top: 12.3vh;
 }

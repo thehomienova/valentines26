@@ -8,6 +8,15 @@ let itinerary = document.querySelector('#itinerary');
 let home = document.querySelector('#home');
 let song = new Audio('audio/song.mp3');
 
+let saidYesLayout = document.querySelector('.said-yes-layout');
+let ourfirst = document.querySelector('#ourfirst');
+let herfav = document.querySelector('#herfav');
+let myfav = document.querySelector('#myfav');
+let hands = document.querySelector('#hands');
+let walking = document.querySelector('#walking');
+let recentfav = document.querySelector('#recentfav');
+let h1 = document.querySelector('.said-yes-layout-h1');
+
 yes.addEventListener('click', () => {
     main.style.backgroundImage = 'url("images/yesbackground.jpg")';
     question.innerHTML = 'i love u <3';
@@ -15,24 +24,75 @@ yes.addEventListener('click', () => {
     buttons.style.display = 'none';
     song.currentTime = 111;
     song.play();
+    
+    
+    setTimeout(() => {
+        saidYesLayout.style.display = 'flex';
+        main.style.transition = 'background-image 0.6s ease-out';
+        main.style.backgroundImage = 'url("images/gameboybackground.jpg")';
+        main.style.backgroundSize = '100% 100%';
+        question.style.transition = 'opacity 0.6s ease-out';
+        question.style.opacity = '0';
+
+        setTimeout(() => {
+            question.style.display = 'none';
+        }, 600);
+    }, 1500);
+
 
     setTimeout(() => {
-        main.style.backgroundImage = 'url("images/walking.jpeg")';
-        main.style.backgroundSize = 'cover';
-        main.style.transition = 'opacity 3s ease-out';
-        question.innerHTML = 'so whats next?';
-        question.style.top = '32vh';
+        ourfirst.style.opacity = '0';
+
+        requestAnimationFrame(() => {
+            ourfirst.style.opacity = '1';
+        });
     }, 3000);
 
     setTimeout(() => {
-        main.style.backgroundImage = 'url("images/hands.jpg")';
-        main.style.backgroundSize = 'cover';
-        main.style.transition = 'opacity 3s ease-out';
-        question.style.display = 'none';
-        itinerary.classList.add('said-yes');
-        gift.classList.add('said-yes');
+        herfav.style.opacity = '0';
+
+        requestAnimationFrame(() => {
+            herfav.style.opacity = '1';
+        });
+    }, 4500);
+
+    setTimeout(() => {
+        myfav.style.opacity = '0';
+
+        requestAnimationFrame(() => {
+            myfav.style.opacity = '1';
+        });
     }, 6000);
 
+    setTimeout(() => {
+        hands.style.opacity = '0';
+
+        requestAnimationFrame(() => {
+            hands.style.opacity = '1';
+        });
+    }, 7500);
+
+    setTimeout(() => {
+        walking.style.opacity = '0';
+
+        requestAnimationFrame(() => {
+            walking.style.opacity = '1';
+        });
+    }, 9000);
+
+    setTimeout(() => {
+        recentfav.style.opacity = '0';
+        requestAnimationFrame(() => {
+            recentfav.style.opacity = '1';
+        });
+    }, 10500);
+
+    setTimeout(() => {
+        h1.style.opacity = '0';
+        requestAnimationFrame(() => {
+            h1.style.opacity = '1';
+        });
+    }, 12000);
 });
 
 
