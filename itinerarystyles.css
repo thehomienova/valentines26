@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Romantic';
+    src: url('romantic_6/Romantic.ttf') format('truetype'),
+         url('romantic_6/Romantic.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 214, 221);
+}
+
+.itinerary-container {
+    background-image: url("images/itinerarybackground.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itinerary-container h1 {
+    font-size: 4rem;
+    font-family: 'Romantic', serif;
+    font-weight: bold;
+    color: rgb(241, 85, 85);
+    text-decoration: none;
+    margin-top: 18%;
+}
+
+.itinerary-container a {
+    font-size: 3rem;
+    font-family: 'Romantic', serif;
+    font-weight: bold;
+    color: rgb(241, 85, 85);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+        color: white;
+    }
+}
+
+.itinerary-container a:visited {
+    color: white;
+}
+
+.coffee-container {
+    margin-top: 20%;
+}
+
+.coffee-container, .photo-container, .spin-container, .view-container {
+    height: 13%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.coffee-container, .spin-container{
+    justify-content: flex-start;
+}
+
+.photo-container, .view-container {
+    justify-content: flex-end;
+}
+
+#coffee-icon {
+    height: 200%;
+    width: 40%;
+    object-fit: contain;
+    margin-left: -3%;
+}
+
+#photo-icon {
+    height: 300%;
+    width: 40%;
+    object-fit: contain;
+}
+
+#spin-icon {
+    height: 100%;
+    width: 40%;
+    object-fit: contain;
+}
+
+#view-icon {
+    height: 100%;
+    width: 40%;
+    object-fit: contain;
+}

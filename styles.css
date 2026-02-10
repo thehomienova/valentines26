@@ -118,7 +118,8 @@ html, body {
     border-radius: 10px;
     width: 84.7%;
     height: 40%;
-    margin-bottom: 44.5vh;
+    position: relative;
+    bottom: 24vh;
     background-color: white;
     padding: 5px;
 }
@@ -137,19 +138,19 @@ html, body {
 
 .said-yes-layout h1 {
     opacity: 0;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-family: 'Romantic', serif;
     color: rgb(241, 85, 85);
     position: relative;
-    left: 6%;
+    left: 20%;
     transition: opacity 0.8s ease-out;
 }
 
 #itinerary {
-    background-color: red;
+    opacity: 0;
     height: 50px;
     width: 50px;
     position: relative;
-    left: 12vh;
-    top: 12.3vh;
+    left: 7.8vh;
+    top: 4.7vh;
 }

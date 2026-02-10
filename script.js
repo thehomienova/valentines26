@@ -107,3 +107,14 @@ no.addEventListener('click', () => {
     buttons.style.display = 'none';
     home.classList.add('said-no');
 });
+
+let itineraryLink = document.querySelector('#itinerary');
+let giftLink = document.querySelector('#gift');
+
+itineraryLink.addEventListener('click', () => {
+        
+});
+
+giftLink.addEventListener('click', () => {
+    window.location.href = 'gifts.html';
+});
