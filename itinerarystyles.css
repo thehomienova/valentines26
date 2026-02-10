@@ -12,7 +12,7 @@
 
 html, body {
     width: 100%;
-    height: 100%;
+    height: 102%;
     overflow: hidden;
     background-color: rgb(255, 214, 221);
 }
@@ -23,7 +23,7 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ html, body {
     font-weight: bold;
     color: rgb(241, 85, 85);
     text-decoration: none;
-    margin-top: 18%;
+    margin-top: 25%;
 }
 
 .itinerary-container a {
@@ -55,7 +55,7 @@ html, body {
 }
 
 .coffee-container {
-    margin-top: 20%;
+    margin-top: 35%;
 }
 
 .coffee-container, .photo-container, .spin-container, .view-container {
