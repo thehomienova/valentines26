@@ -47,9 +47,7 @@ html, body {
     color: rgb(241, 85, 85);
     text-decoration: none;
     transition: color 0.3s ease;
-    &:hover {
-        color: white;
-    }
+    border-bottom: 2px solid rgb(241, 85, 85);
 }
 
 .itinerary-container a:visited {
@@ -80,7 +78,7 @@ html, body {
     height: 200%;
     width: 40%;
     object-fit: contain;
-    margin-left: -3%;
+    margin-left: -7%;
 }
 
 #photo-icon {

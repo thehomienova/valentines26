@@ -36,8 +36,8 @@ yes.addEventListener('click', () => {
 
         setTimeout(() => {
             question.style.display = 'none';
-        }, 600);
-    }, 1500);
+        }, 100);
+    }, 5000);
 
 
     setTimeout(() => {
@@ -46,7 +46,7 @@ yes.addEventListener('click', () => {
         requestAnimationFrame(() => {
             ourfirst.style.opacity = '1';
         });
-    }, 3000);
+    }, 6000);
 
     setTimeout(() => {
         herfav.style.opacity = '0';
@@ -54,7 +54,7 @@ yes.addEventListener('click', () => {
         requestAnimationFrame(() => {
             herfav.style.opacity = '1';
         });
-    }, 4500);
+    }, 7000);
 
     setTimeout(() => {
         myfav.style.opacity = '0';
@@ -62,7 +62,7 @@ yes.addEventListener('click', () => {
         requestAnimationFrame(() => {
             myfav.style.opacity = '1';
         });
-    }, 6000);
+    }, 8000);
 
     setTimeout(() => {
         hands.style.opacity = '0';
@@ -70,7 +70,7 @@ yes.addEventListener('click', () => {
         requestAnimationFrame(() => {
             hands.style.opacity = '1';
         });
-    }, 7500);
+    }, 9000);
 
     setTimeout(() => {
         walking.style.opacity = '0';
@@ -78,14 +78,14 @@ yes.addEventListener('click', () => {
         requestAnimationFrame(() => {
             walking.style.opacity = '1';
         });
-    }, 9000);
+    }, 10000);
 
     setTimeout(() => {
         recentfav.style.opacity = '0';
         requestAnimationFrame(() => {
             recentfav.style.opacity = '1';
         });
-    }, 10500);
+    }, 11000);
 
     setTimeout(() => {
         h1.style.opacity = '0';
