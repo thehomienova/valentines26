@@ -114,7 +114,3 @@ let giftLink = document.querySelector('#gift');
 itineraryLink.addEventListener('click', () => {
         
 });
-
-giftLink.addEventListener('click', () => {
-    window.location.href = 'gifts.html';
-});

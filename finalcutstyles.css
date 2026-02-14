@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Romantic';
+    src: url('romantic_6/Romantic.ttf') format('truetype'),
+         url('romantic_6/Romantic.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 107%;
+    overflow: hidden;
+    background-color: rgb(255, 214, 221);
+  
+}
+
+.finalcut-container {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/finalcutbackground.jpeg");
+    background-size: 100% 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
