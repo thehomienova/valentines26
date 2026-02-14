@@ -50,15 +50,11 @@ html, body {
     border-bottom: 2px solid rgb(241, 85, 85);
 }
 
-.itinerary-container a:visited {
-    color: white;
-}
-
 .coffee-container {
     margin-top: 35%;
 }
 
-.coffee-container, .photo-container, .spin-container, .view-container {
+.coffee-container, .photo-container, .taco-container, .view-container {
     height: 13%;
     width: 100%;
     display: flex;
@@ -66,7 +62,7 @@ html, body {
     overflow: visible;
 }
 
-.coffee-container, .spin-container{
+.coffee-container, .taco-container{
     justify-content: flex-start;
 }
 
@@ -87,7 +83,7 @@ html, body {
     object-fit: contain;
 }
 
-#spin-icon {
+#taco-icon {
     height: 100%;
     width: 40%;
     object-fit: contain;
